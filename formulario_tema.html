@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro/Edição de Tema</title>
+</head>
+<body>
+    <header>
+        <h1>Administração</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro_tema.html">Cadastro de Tema</a></li>
+                <li><a href="cadastro_usuario.html">Cadastro de Usuários</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Cadastro/Edição de Receitas</h2>
+        <form action="editar_tema_action.html" method="post">
+            <label for="nome_tema">Nome da Receita:</label>
+            <input type="text" id="nome_tema" name="nome_tema" value="Título da Receita" required><br>
+            <button type="submit">Salvar Alterações</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>Autor:<a href="sobre.html">Herbert</a></p>
+    </footer>
+</body>
+</html>
