@@ -1,0 +1,91 @@
+body {
+    margin: 0; /* Remove a margem padrão */
+    padding: 10px; /* Adiciona espaçamento interno */
+}
+div {
+    border: 2px solid black; /* Borda preta de 2px */
+}
+button {
+    border: 2px solid blue;
+    border-radius: 10px; /* Cantos arredondados */
+}
+:root {
+    --cor-primaria: #3498db; /* Azul */
+    --cor-secundaria: #2ecc71; /* Verde */
+    --cor-fundo: #f4f4f4; /* Cinza claro */
+}
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+}
+:root {
+    --fonte-principal: 'Arial', sans-serif;
+    --tamanho-texto: 16px;
+}
+body {
+    font-family: var(--fonte-principal);
+    font-size: var(--tamanho-texto);
+}
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* Menu de navegação */
+.menu {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: transform 0.3s ease-in-out;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .menu a:hover {
+    color: #ff6347;
+  }
+  /* Estilos para o botão de abrir/fechar */
+.menu-btn {
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+  }
+  
+  .close-btn {
+    display: none;
+  }
+  
+  #menu-toggle:checked + .menu-btn {
+    display: none;
+  }
+  
+  #menu-toggle:checked + .menu-btn + .menu {
+    transform: translateX(0);
+  }
