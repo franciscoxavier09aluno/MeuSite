@@ -34,58 +34,62 @@ p {
     font-size: 14px;
     line-height: 1.5;
 }
-/* Menu de navegação */
-.menu {
-    position: absolute;
-    top: 0;
-    right: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #333;
-    transition: transform 0.3s ease-in-out;
-    padding-top: 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .menu ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu li {
-    margin: 20px 0;
-  }
-  
-  .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  
-  .menu a:hover {
-    color: #ff6347;
-  }
-  /* Estilos para o botão de abrir/fechar */
+/* Estilo do ícone de menu */
 .menu-btn {
-    font-size: 30px;
-    cursor: pointer;
-    color: #333;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-  }
-  
-  .close-btn {
-    display: none;
-  }
-  
-  #menu-toggle:checked + .menu-btn {
-    display: none;
-  }
-  
-  #menu-toggle:checked + .menu-btn + .menu {
-    transform: translateX(0);
-  }
+  font-size: 30px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Estilo do botão de fechar */
+.close-btn {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Esconde o menu por padrão */
+.menu {
+  display: none;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+/* Estilo dos itens do menu */
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Quando o menu está aberto */
+#menu-toggle:checked + .menu-btn + .menu {
+  display: block;
+}
+
+/* Quando o checkbox estiver marcado, o ícone de fechar aparece */
+#menu-toggle:checked + .menu-btn + .menu + #close-menu {
+  display: block;
+}
+
+/* Esconde o ícone de abrir quando o menu estiver visível */
+#menu-toggle:checked + .menu-btn {
+  display: none;
+}
