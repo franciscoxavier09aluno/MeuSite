@@ -35,7 +35,7 @@ p {
     line-height: 1.5;
 }
 /* Estilo do ícone de menu */
-.menu-btn {
+.menu {
   font-size: 30px;
   cursor: pointer;
   display: inline-block;
@@ -84,16 +84,16 @@ p {
 }
 
 /* Quando o menu está aberto */
-#menu-toggle:checked + .menu-btn + .menu {
+#menu-toggle:checked + .menu + .menu {
   display: block;
 }
 
 /* Quando o checkbox estiver marcado, o ícone de fechar aparece */
-#menu-toggle:checked + .menu-btn + .menu + #close-menu {
+#menu-toggle:checked + .menu + .menu + #close-menu {
   display: block;
 }
 
 /* Esconde o ícone de abrir quando o menu estiver visível */
-#menu-toggle:checked + .menu-btn {
+#menu-toggle:checked + .menu {
   display: none;
 }
