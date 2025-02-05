@@ -9,11 +9,27 @@
 <body>
     <h2>Início</h2>
     <img src="Imagens/RECEITAS.jpg" width="275" height="175" alt="Logo do Site">
-    <nav>
-       <a href="index.html">Página Inicial</a>
-       <a href="paginadetalhes.html">Página de Detalhes</a>
-       <a href="paginacadastro.html">Cadastro</a>
-       <a href="sobre.html">Sobre o Autor</a>
+     <!-- Botão de abrir menu -->
+    <label for="menu-toggle" class="menu-btn" id="open-menu">
+        &#9776; <!-- Ícone de "hamburguer" -->
+    </label>
+
+    <!-- Botão de fechar menu -->
+    <label for="menu-toggle" class="menu-btn close-btn" id="close-menu">
+        &times; <!-- Ícone de "fechar" -->
+    </label>
+
+    <!-- Input checkbox escondido -->
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+    <!-- Menu de navegação -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Página Inicial</a></li>
+            <li><a href="#">Página de Detalhes</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Sobre o Autor</a></li>
+        </ul>
     </nav>
     <h3>Ingredientes que Não Podem Faltar na sua Dieta Fitness</h3>
     <img src="Imagens/pexels-mastercowley-1153369.jpg" width="324" height="213" alt="Imagem da Postagem">
