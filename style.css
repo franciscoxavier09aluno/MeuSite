@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 20px;
+    padding: 20px;
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 70px; /* Espaço para a navbar flutuante */
+    padding-top: 70px;
 }
 
 nav {
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2ecc71; /* Verde */
+    color: #f4f4f4;
 }
 
 h2, h3 {
