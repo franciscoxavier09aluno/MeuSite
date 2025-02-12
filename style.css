@@ -54,13 +54,13 @@ h2 {
 }
 
 .logo {
-    max-width: 20%;
+    width: auto;
     height: auto;
     margin-bottom: 20px;
 }
 
 img a {
-    max-width: 50%;
+    width: auto;
     height: auto;
     margin-bottom: 20px;
 }
