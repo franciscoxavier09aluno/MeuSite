@@ -55,12 +55,12 @@ h2 {
 
 .logo {
     width: auto;
-    height: 30px; /* Defina um tamanho adequado para a logo */
+    height: 35px; /* Defina um tamanho adequado para a logo */
 }
 
 section img {
-    max-width: 80%; /* Limita a largura máxima das imagens */
-    height: 80px;
+    max-width: 100%; /* Limita a largura máxima das imagens */
+    height: 300px;
     display: block; /* Remove o espaçamento abaixo da imagem */
     margin-left: 0; /* Alinha a imagem à esquerda */
     margin-right: auto; /* Garante que não haja espaço à direita */
@@ -110,7 +110,7 @@ footer a:hover {
     }
 
     .logo {
-        height: 30px;
+        height: 35px;
     }
 
     h2 {
