@@ -23,7 +23,7 @@
             color: var(--cor-texto);
             padding: 20px;
             text-align: center;
-            padding-top: 60px; /* Ajuste para dar espaço para a logo fixa */
+            padding-top: 60px;
         }
 
         h1 {
@@ -32,22 +32,21 @@
             margin-bottom: 20px;
         }
 
-        /* Logo fixa no topo com fundo preto */
         .logo {
             position: fixed;
-            top: 0; /* Logo ficará no topo */
-            left: 0; /* Alinha à esquerda */
-            width: 100%; /* Ocupa toda a largura da tela */
-            height: 60px; /* Tamanho fixo da logo */
-            background-color: black; /* Cor preta de fundo */
-            z-index: 1000; /* Garante que a logo fique por cima de outros elementos */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background-color: var(--cor-primaria);
+            z-index: 1000;
             display: flex;
-            justify-content: center; /* Centraliza a logo */
-            align-items: center; /* Alinha a logo verticalmente */
+            justify-content: center;
+            align-items: center;
         }
 
         .logo img {
-            height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: 40px;
         }
 
         .imagem-postagem {
@@ -83,7 +82,6 @@
 </head>
 <body>
 
-    <!-- Logo fixa com fundo preto -->
     <a href="index.html">
         <div class="logo">
             <img src="Imagens/receitasmaster.jpg" alt="ReceitasMaster">
