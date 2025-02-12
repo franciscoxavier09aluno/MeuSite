@@ -32,19 +32,22 @@
             margin-bottom: 20px;
         }
 
-        /* Logo fixa no topo com gradiente branco */
+        /* Logo fixa no topo com fundo preto */
         .logo {
             position: fixed;
-            top: 10px; /* Distância do topo */
-            left: 50%; /* Centraliza horizontalmente */
-            transform: translateX(-50%); /* Ajusta o alinhamento */
-            width: auto;
-            height: 50px; /* Tamanho fixo da logo */
+            top: 0; /* Logo ficará no topo */
+            left: 0; /* Alinha à esquerda */
+            width: 100%; /* Ocupa toda a largura da tela */
+            height: 60px; /* Tamanho fixo da logo */
+            background-color: black; /* Cor preta de fundo */
             z-index: 1000; /* Garante que a logo fique por cima de outros elementos */
-            padding: 10px;
-            background: linear-gradient(135deg, white, #f4f4f4); /* Gradiente branco */
-            border-radius: 10px; /* Bordas arredondadas */
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave */
+            display: flex;
+            justify-content: center; /* Centraliza a logo */
+            align-items: center; /* Alinha a logo verticalmente */
+        }
+
+        .logo img {
+            height: 40px; /* Ajuste o tamanho da imagem conforme necessário */
         }
 
         .imagem-postagem {
@@ -80,9 +83,11 @@
 </head>
 <body>
 
-    <!-- A logo agora está fixa no topo com gradiente branco -->
+    <!-- Logo fixa com fundo preto -->
     <a href="index.html">
-        <img src="Imagens/receitasmaster.jpg" class="logo" alt="ReceitasMaster">
+        <div class="logo">
+            <img src="Imagens/receitasmaster.jpg" alt="ReceitasMaster">
+        </div>
     </a>
 
     <h1>Benefícios das Frutas Cítricas nas suas Receitas Fitness</h1>
