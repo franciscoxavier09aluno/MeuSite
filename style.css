@@ -56,15 +56,14 @@ h2 {
 /* Estilo da logo */
 .logo {
     width: auto;
-    height: 60px; /* Defina um tamanho adequado para a logo */
+    height: 30px; /* Defina um tamanho adequado para a logo */
 }
 
-/* Ajuste das imagens dentro de links */
-a img {
-    max-width: 100%; /* Imagens não ultrapassam o tamanho do contêiner */
+section img {
+    max-width: 80%; /* Limita a largura máxima das imagens */
     height: auto;
-    margin-bottom: 20px;
-    display: block; /* Evita espaçamento indesejado abaixo da imagem */
+    margin: 20px auto; /* Centraliza as imagens e adiciona um espaçamento */
+    display: block; /* Remove o espaçamento abaixo da imagem */
 }
 
 /* Ajuste de estilo para os botões */
@@ -115,14 +114,14 @@ footer a:hover {
     }
 
     .logo {
-        height: 40px; /* Ajuste a altura da logo para telas menores */
+        height: 30px; /* Ajuste a altura da logo para telas menores */
     }
 
     h2 {
         font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
     }
 
-    img {
+    section img {
         max-width: 100%;
         height: auto;
     }
