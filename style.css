@@ -53,6 +53,12 @@ h2 {
     margin: 20px 0 10px;
 }
 
+.logo {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 img a {
     max-width: 50%;
     height: auto;
