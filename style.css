@@ -53,19 +53,19 @@ h2 {
     margin: 20px 0 10px;
 }
 
-/* Estilo da logo */
 .logo {
     width: auto;
-    height: 40px; /* Defina um tamanho adequado para a logo */
+    height: 30px; /* Defina um tamanho adequado para a logo */
 }
 
 section img {
-    max-width: 60%; /* Limita a largura máxima das imagens */
-    height: 60px;
+    max-width: 80%; /* Limita a largura máxima das imagens */
+    height: 80px;
     display: block; /* Remove o espaçamento abaixo da imagem */
+    margin-left: 0; /* Alinha a imagem à esquerda */
+    margin-right: auto; /* Garante que não haja espaço à direita */
 }
 
-/* Ajuste de estilo para os botões */
 button {
     background-color: #e74c3c;
     color: white;
@@ -79,7 +79,6 @@ button:hover {
     background-color: #2ecc71;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 10px;
@@ -88,7 +87,6 @@ footer {
     margin-top: 10px;
 }
 
-/* Estilo dos links no rodapé */
 footer a {
     color: black;
     text-decoration: none;
@@ -100,7 +98,6 @@ footer a:hover {
     color: #f4f4f4;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -113,11 +110,11 @@ footer a:hover {
     }
 
     .logo {
-        height: 40px; /* Ajuste a altura da logo para telas menores */
+        height: 30px;
     }
 
     h2 {
-        font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+        font-size: 20px;
     }
 
     section img {
