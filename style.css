@@ -56,13 +56,12 @@ h2 {
 /* Estilo da logo */
 .logo {
     width: auto;
-    height: 50px; /* Defina um tamanho adequado para a logo */
+    height: 40px; /* Defina um tamanho adequado para a logo */
 }
 
 section img {
     max-width: 60%; /* Limita a largura máxima das imagens */
     height: 60px;
-    margin: 20px auto; /* Centraliza as imagens e adiciona um espaçamento */
     display: block; /* Remove o espaçamento abaixo da imagem */
 }
 
