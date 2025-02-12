@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="index.html">
-    <img src="Imagens/receitasmaster.jpg" class="logo" alt="ReceitasMaster">
-    </a>
     <title>Benefícios das Frutas Cítricas</title>
     <style>
         * {
@@ -26,6 +23,7 @@
             color: var(--cor-texto);
             padding: 20px;
             text-align: center;
+            padding-top: 60px; /* Ajuste para dar espaço para a logo fixa */
         }
 
         h1 {
@@ -34,9 +32,15 @@
             margin-bottom: 20px;
         }
 
+        /* Logo fixa no topo */
         .logo {
+            position: fixed;
+            top: 10px; /* Distância do topo */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translateX(-50%); /* Ajusta o alinhamento */
             width: auto;
-            heith: 20px;
+            height: 50px; /* Tamanho fixo da logo */
+            z-index: 1000; /* Garante que a logo fique por cima de outros elementos */
         }
 
         .imagem-postagem {
@@ -71,6 +75,11 @@
     </style>
 </head>
 <body>
+
+    <!-- A logo agora está fixa no topo da página -->
+    <a href="index.html">
+        <img src="Imagens/receitasmaster.jpg" class="logo" alt="ReceitasMaster">
+    </a>
 
     <h1>Benefícios das Frutas Cítricas nas suas Receitas Fitness</h1>
     
