@@ -48,6 +48,15 @@ nav ul li a:hover {
     color: #f4f4f4;
 }
 
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
 h3 {
     color: #e74c3c;
     margin: 20px 0 10px;
@@ -79,6 +88,28 @@ button:hover {
     background-color: #2ecc71;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas por padrão */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Definindo largura máxima */
+}
+
+.objeto-tema {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuste para telas menores */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Empilhar itens em uma coluna em telas pequenas */
+    }
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -103,6 +134,32 @@ footer a:hover {
         flex-direction: column;
         padding: 15px;
     }
+
+@media (max-width: 768px) {
+    .menu-btn.open {
+        display: block;
+    }
+
+nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Estilo de impressão */
+@media print {
+    nav {
+        display: none; /* Esconde o menu de navegação na impressão */
+    }
+    .container {
+        grid-template-columns: 1fr; /* Em impressão, colocar tudo em uma coluna */
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}
 
     nav ul {
         flex-direction: column;
