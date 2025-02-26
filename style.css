@@ -25,12 +25,12 @@ body {
 }
 .menu-label {
     display: none;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
+    align-items: left;
+    justify-content: left;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 40px;
     color: black;
     user-select: none;
 }
@@ -59,7 +59,11 @@ body {
 #menu-toggle:checked ~ .menu {
     max-height: 600px;
     padding: 20px 20px;
-    display: flex;
+    display: justify;
+}
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
 }
 .logo {
     width: auto;
