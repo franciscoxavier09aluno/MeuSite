@@ -60,7 +60,6 @@ body {
     max-height: 500px;
     padding: 20px 20px;
     display: left;
-    transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
     .hamburger-menu {
@@ -104,6 +103,7 @@ footer {
     padding: 10px;
     background-color: #e74c3c;
     color: white;
+    justify-content: center;
     margin-top: 10px;
 }
 footer a {
