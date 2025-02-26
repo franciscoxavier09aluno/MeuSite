@@ -62,7 +62,7 @@ body {
     display: justify;
 }
 @media screen and (max-width: 768px) {
-    .hamburger-icon {
+    .menu {
         display: block;
 }
 .logo {
