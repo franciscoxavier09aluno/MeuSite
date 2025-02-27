@@ -116,7 +116,7 @@ body {
 
     .grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 2fr;
         gap: var(--grid-gap);
     }
 
@@ -142,7 +142,7 @@ body {
 
 @media screen and (max-width: 480px) {
     .grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .menu {
