@@ -214,6 +214,7 @@ footer a {
     font-weight: bold;
     transition: var(--transition-time);
 }
+
 footer a:hover {
     color: var(--link-hover-color);
 }
