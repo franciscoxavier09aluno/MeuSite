@@ -2,19 +2,20 @@
     --primary-color: #e74c3c;
     --secondary-color: #333;
     --background-color: white;
-    --menu-background-color: #eee;
+    --menu-background-color: rgba(255, 255, 255, 0.8);
     --menu-hover-color: #ddd;
     --footer-background-color: #e74c3c;
     --footer-text-color: white;
     --link-hover-color: white;
-    --font-family: Arial, sans-serif;
+    --font-family: 'Roboto', sans-serif;
     --button-hover-color: black;
     --button-padding: 10px 20px;
     --button-border-radius: 5px;
     --grid-gap: 20px;
-    --logo-height: 30px;
+    --logo-height: 40px;
     --transition-time: 0.3s;
     --max-width: 1200px;
+    --header-height: 60px;
 }
 
 * {
@@ -27,7 +28,8 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--secondary-color);
-    padding-top: 60px;
+    margin: 0;
+    padding-top: var(--header-height);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,16 +45,17 @@ header {
     width: 100%;
     max-width: var(--max-width);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: var(--background-color);
-    padding: 10px 20px;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+    height: var(--header-height);
+    background-color: var(--background-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
 }
 
 .menu-container {
@@ -71,9 +74,14 @@ header {
     font-size: 30px;
     cursor: pointer;
     position: absolute;
-    left: 10px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    transition: all var(--transition-time);
+}
+
+.hamburger-menu:hover {
+    color: var(--primary-color);
 }
 
 .logo {
@@ -84,77 +92,35 @@ header {
 
 .menu {
     position: absolute;
-    top: 50px;
-    left: 10px;
+    top: var(--header-height);
+    left: 0;
     background: var(--menu-background-color);
-    width: 250px;
+    width: 100%;
     max-height: 0;
     overflow: hidden;
     transition: max-height var(--transition-time) ease-in-out, padding var(--transition-time);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 999;
     border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu a {
     text-decoration: none;
-    color: var(--secondary-color);
-    padding: 12px;
+    color: white;
+    padding: 15px;
     display: block;
+    text-align: center;
     transition: background-color var(--transition-time), color var(--transition-time);
 }
 
 .menu a:hover {
-    background-color: var(--primary-color);
-    color: white;
-    border-radius: 5px;
+    background-color: var(--menu-hover-color);
+    color: var(--secondary-color);
 }
 
 #menu-toggle:checked ~ .menu {
-    max-height: 350px;
-    padding: 15px;
-}
-
-@media screen and (min-width: 1025px) {
-    .hamburger-menu {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .menu {
-        width: 220px;
-        left: 10px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .logo {
-        height: 25px;
-    }
-
-    .menu {
-        width: 220px;
-        left: 10px;
-    }
-
-    #menu-toggle:checked ~ .menu {
-        max-height: 300px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .menu {
-        width: 100%;
-        left: 0;
-    }
-
-    .menu a {
-        text-align: center;
-    }
+    max-height: 300px;
+    padding: 20px;
 }
 
 .grid {
@@ -162,12 +128,6 @@ header {
     grid-template-columns: 1fr 1fr;
     gap: var(--grid-gap);
     width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
 }
 
 section img {
