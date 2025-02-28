@@ -141,7 +141,7 @@ section img {
 
 button {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: white;
     border: none;
     padding: var(--button-padding);
     cursor: pointer;
@@ -164,7 +164,7 @@ footer {
 }
 
 footer a {
-    color: var(--button-hover-color);
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition: var(--transition-time);
