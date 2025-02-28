@@ -1,7 +1,7 @@
 :root {
     --primary-color: #e74c3c;
     --secondary-color: #333;
-    --background-color: #fff;
+    --background-color: #fafafa;
     --menu-background-color: #555;
     --menu-hover-color: var(--primary-color);
     --footer-background-color: #e74c3c;
