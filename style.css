@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #e74c3c;
+    --primary-color: #e02828;
     --secondary-color: #333;
     --background-color: #fafafa;
     --menu-background-color: #555;
     --menu-hover-color: var(--primary-color);
-    --footer-background-color: #e74c3c;
+    --footer-background-color: #e02828;
     --footer-text-color: #fff;
     --link-hover-color: #fff;
     --font-family: 'Roboto', sans-serif;
