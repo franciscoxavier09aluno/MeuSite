@@ -1,14 +1,14 @@
 :root {
     --primary-color: #e74c3c;
     --secondary-color: #333;
-    --background-color: #000;
+    --background-color: #fff;
     --menu-background-color: #555;
     --menu-hover-color: var(--primary-color);
     --footer-background-color: #e74c3c;
-    --footer-text-color: #000;
-    --link-hover-color: #000;
+    --footer-text-color: #fff;
+    --link-hover-color: #fff;
     --font-family: 'Roboto', sans-serif;
-    --button-hover-color: #111;
+    --button-hover-color: #000;
     --button-padding: 10px 20px;
     --button-border-radius: 5px;
     --grid-gap: 20px;
@@ -107,7 +107,7 @@ header {
 
 .menu a {
     text-decoration: none;
-    color: white;
+    color: var(--background-color);
     padding: 15px;
     display: block;
     text-align: center;
@@ -116,7 +116,7 @@ header {
 
 .menu a:hover, .menu a:focus {
     background-color: var(--menu-hover-color);
-    color: white;
+    color: var(--background-color);
 }
 
 #menu-toggle:checked ~ .menu {
@@ -141,7 +141,7 @@ section img {
 
 button {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--background-color);
     border: none;
     padding: var(--button-padding);
     cursor: pointer;
@@ -164,7 +164,7 @@ footer {
 }
 
 footer a {
-    color: black;
+    color: var(--button-hover-color);
     text-decoration: none;
     font-weight: bold;
     transition: var(--transition-time);
