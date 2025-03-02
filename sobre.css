@@ -1,9 +1,96 @@
+:root {
+    --cor-primaria: #e02828;
+    --cor-texto: #333;
+    --background: #fafafa;
+    --input-border: #ccc;
+    --input-focus: #e02828;
+    --btn-hover: #c82323;
+    --border-radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--cor-texto);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100%;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.logo {
+    height: 40px;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+h1 {
+    color: var(--cor-primaria);
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
 .sobre-texto {
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: var(--border-radius);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.8;
     font-size: 18px;
+    transition: var(--transition);
+}
+
+.sobre-texto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.sobre-texto p {
+    margin-bottom: 15px;
+}
+
+.sobre-texto strong {
+    color: var(--cor-primaria);
+}
+
+footer {
+    background: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #fff;
 }
