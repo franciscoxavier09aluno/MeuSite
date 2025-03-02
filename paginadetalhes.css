@@ -2,8 +2,8 @@
     --cor-primaria: #e02828 !important;
     --cor-secundaria: #333 !important;
     --cor-fundo: #fafafa !important;
-    --cor-hover: #c82323;
-    --cor-texto: #333;
+    --cor-hover: #333 !important;
+    --cor-texto: #333 !important;
     --cor-branco: #ffffff;
     --cor-sombra: #cccccc;
     --border-radius: 8px;
