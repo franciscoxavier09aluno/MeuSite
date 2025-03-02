@@ -62,12 +62,12 @@ strong.text-danger {
 }
 
 footer {
-    background: var(--cor-primaria) !important;
-    color: var(--cor-branco);
+    background: var(--cor-primaria);
+    color: white;
+    display: flex;
     text-align: center;
-    display: flex !important;
-    padding: 12px;
-    margin-top: 40px;
+    padding: 10px;
+    margin-top: 30px;
     width: 100%;
 }
 
