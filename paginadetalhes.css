@@ -1,7 +1,7 @@
 :root {
     --cor-primaria: #e02828 !important;
     --cor-secundaria: #333 !important;
-    --cor-fundo: #fafafa !important;
+    --cor-fundo: #fafafa;
     --cor-hover: #333 !important;
     --cor-texto: #333 !important;
     --cor-branco: #ffffff;
