@@ -27,14 +27,14 @@ body {
 
 .logo-container {
     width: 100%;
-    background-color: var(--cor-primaria);
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     padding: 15px 0;
 }
 
 .logo {
-    height: 40px;
+    height: 30px;
 }
 
 .container {
@@ -46,13 +46,13 @@ body {
 
 h1 {
     color: var(--cor-primaria);
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 15px;
 }
 
 .sobre-texto {
     background: white;
-    padding: 25px;
+    padding: 20px;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     text-align: justify;
@@ -77,6 +77,7 @@ h1 {
 footer {
     background: var(--cor-primaria);
     color: white;
+    display: flex;
     text-align: center;
     padding: 12px;
     margin-top: 40px;
