@@ -1,7 +1,7 @@
 :root {
-    --cor-primaria: #e02828;
-    --cor-secundaria: #333;
-    --cor-fundo: #fafafa;
+    --cor-primaria: #e02828 !important;
+    --cor-secundaria: #333 !important;
+    --cor-fundo: #fafafa !important;
     --cor-hover: #c82323;
     --cor-texto: #333;
     --cor-branco: #ffffff;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar-brand img {
-    height: 30px;
+    height: 30px !important;
 }
 
 .navbar-nav .nav-link {
@@ -62,7 +62,7 @@ strong.text-danger {
 }
 
 footer {
-    background: var(--cor-primaria);
+    background: var(--cor-primaria) !important;
     color: var(--cor-branco);
     text-align: center;
     display: flex !important;
