@@ -1,0 +1,9 @@
+.sobre-texto {
+    background: white;
+    padding: 20px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 18px;
+}
