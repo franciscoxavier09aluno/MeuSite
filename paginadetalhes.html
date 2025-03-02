@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benefícios das Frutas Cítricas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="paginadetalhes.css">
 </head>
 <body>
 
-    <a href="index.html">
-        <div class="logo">
-            <img src="Imagens/receitasmaster.jpg" alt="ReceitasMaster">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagens/receitasmaster.jpg" alt="ReceitasMaster" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Receitas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+                </ul>
+            </div>
         </div>
-    </a>
+    </nav>
 
-    <h1>Benefícios das Frutas Cítricas nas suas Receitas Fitness</h1>
-    
-    <img src="Imagens/pexels-dmitry-demidov-515774-3904800.jpg" class="imagem-postagem" alt="Imagem da Postagem">
+    <div class="container mt-5 pt-5">
+        <h1 class="text-danger text-center fw-bold">Benefícios das Frutas Cítricas nas suas Receitas Fitness</h1>
 
-    <div class="conteudo">
-        <p>As frutas cítricas, como laranja, limão, tangerina, são essenciais para uma alimentação saudável e equilibrada. Elas são ricas em vitaminas, minerais e compostos bioativos que promovem diversos benefícios para a saúde.</p>
+        <div class="text-center my-4">
+            <img src="Imagens/pexels-dmitry-demidov-515774-3904800.jpg" class="img-fluid rounded shadow" alt="Imagem da Postagem">
+        </div>
 
-        <p><strong>✅ Ricas em Vitamina C:</strong> A vitamina C fortalece o sistema imunológico, ajudando a prevenir gripes e resfriados.</p>
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <p><strong class="text-danger">✅ Ricas em Vitamina C:</strong> A vitamina C fortalece o sistema imunológico, ajudando a prevenir gripes e resfriados.</p>
+                        <p><strong class="text-danger">✅ Antioxidantes Poderosos:</strong> Combatem o envelhecimento precoce e reduzem inflamações no organismo.</p>
+                        <p><strong class="text-danger">✅ Melhora da Digestão:</strong> As fibras solúveis regulam o intestino e promovem uma digestão mais eficiente.</p>
+                        <p><strong class="text-danger">✅ Hidratação Natural:</strong> Alto teor de água que auxilia na eliminação de toxinas e hidratação do corpo.</p>
+                    </div>
+                </div>
+            </div>
 
-        <p><strong>✅ Antioxidantes Poderosos:</strong> Combatem o envelhecimento precoce e reduzem inflamações no organismo.</p>
+            <div class="col">
+                <div class="card border-0 shadow">
+                    <div class="card-body">
+                        <p><strong class="text-danger">✅ Controle do Peso:</strong> Fibras e baixo teor calórico ajudam no emagrecimento saudável.</p>
+                        <p><strong class="text-danger">✅ Saúde do Coração:</strong> Reduzem o colesterol ruim (LDL) e melhoram a circulação sanguínea.</p>
+                        <p><strong class="text-danger">✅ Regulação do Açúcar no Sangue:</strong> Evitam picos glicêmicos e ajudam na prevenção do diabetes tipo 2.</p>
+                        <p><strong class="text-danger">✅ Beleza da Pele:</strong> Estimulam a produção de colágeno, deixando a pele firme e jovem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <p><strong>✅ Melhora da Digestão:</strong> As fibras solúveis regulam o intestino e promovem uma digestão mais eficiente.</p>
-
-        <p><strong>✅ Hidratação Natural:</strong> Alto teor de água que auxilia na eliminação de toxinas e hidratação do corpo.</p>
-
-        <p><strong>✅ Controle do Peso:</strong> Fibras e baixo teor calórico ajudam no emagrecimento saudável.</p>
-
-        <p><strong>✅ Saúde do Coração:</strong> Reduzem o colesterol ruim (LDL) e melhoram a circulação sanguínea.</p>
-
-        <p><strong>✅ Regulação do Açúcar no Sangue:</strong> Evitam picos glicêmicos e ajudam na prevenção do diabetes tipo 2.</p>
-
-        <p><strong>✅ Beleza da Pele:</strong> Estimulam a produção de colágeno, deixando a pele firme e jovem.</p>
-
-        <p>Inclua frutas cítricas na sua alimentação em sucos, saladas ou nas refeições para aproveitar todos esses benefícios!</p>
+        <div class="text-center mt-4">
+            <p>Inclua frutas cítricas na sua alimentação em sucos, saladas ou nas refeições para aproveitar todos esses benefícios!</p>
+            <a href="#" class="btn btn-danger btn-lg">Saiba Mais</a>
+        </div>
     </div>
 
-    <footer>&copy; 2025 - Receitas Master</footer>
+    <footer class="bg-danger text-white text-center py-3 mt-4">
+        &copy; 2025 - Receitas Master | <a href="#" class="text-white fw-bold">Política de Privacidade</a>
+    </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
