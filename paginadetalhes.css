@@ -1,9 +1,9 @@
 :root {
     --cor-primaria: #e02828 !important;
-    --cor-secundaria: #333 !important;
+    --cor-secundaria: #333;
     --cor-fundo: #fafafa;
-    --cor-hover: #333 !important;
-    --cor-texto: #333 !important;
+    --cor-hover: #333;
+    --cor-texto: #333;
     --cor-branco: #ffffff;
     --cor-sombra: #cccccc;
     --border-radius: 8px;
@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--cor-fundo) !important;
+    background-color: var(--cor-primaria) !important;
 }
 
 .navbar-brand img {
@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: var(--cor-branco);
+    color: var(--cor-primaria);
     font-weight: bold;
     transition: var(--transition);
 }
