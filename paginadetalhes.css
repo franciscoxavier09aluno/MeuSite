@@ -24,7 +24,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: var(--cor-branco) !important;
+    color: var(--cor-branco);
     font-weight: bold;
     transition: var(--transition);
 }
