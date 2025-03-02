@@ -1,2 +1,2 @@
 # Meu Site
-Site de atividade de programação Web l
+Site de atividades da programação Web l
