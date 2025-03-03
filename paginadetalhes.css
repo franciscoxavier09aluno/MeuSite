@@ -1,89 +1,79 @@
 :root {
-    --cor-primaria: #e02828 !important;
-    --cor-secundaria: #333;
-    --cor-fundo: #fafafa;
-    --cor-hover: #333;
-    --cor-texto: #333;
-    --cor-branco: #ffffff;
-    --cor-sombra: #cccccc;
-    --border-radius: 8px;
-    --transition: 0.3s ease-in-out;
+    --primary-color: #e02828;
+    --secondary-color: #333;
+    --background-color: #fafafa;
+    --menu-background-color: #555;
+    --menu-hover-color: var(--primary-color);
+    --footer-background-color: #e02828;
+    --footer-text-color: #fff;
+    --link-hover-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+    --button-hover-color: #555;
 }
 
 body {
-    background-color: var(--cor-fundo);
-    color: var(--cor-texto);
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family);
     margin: 0;
     padding: 0;
 }
 
-.navbar {
-    background-color: var(--cor-branco) !important;
+.custom-navbar {
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    width: 100%;
 }
 
-.navbar-brand img {
-    height: 35px !important;
+.logo {
+    height: 35px;
+    background-color: transparent;
 }
 
-.navbar-toggler-icon {
-    color: var(--cor-primaria);
+.navbar a {
+    color: var(--footer-text-color);
+    text-decoration: none;
 }
 
-.navbar-nav .nav-link {
-    font-weight: bold;
-    transition: var(--transition);
-}
-
-.navbar-nav .nav-link:hover {
-    color: var(--cor-hover) !important;
+.navbar a:hover {
+    color: var(--link-hover-color);
 }
 
 h1 {
     font-size: 25px;
     font-weight: bold;
-    color: var(--cor-primaria);
+    color: var(--primary-color);
     margin-bottom: 20px;
 }
 
 .img-fluid {
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 12px var(--cor-sombra);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--secondary-color);
 }
 
 .card {
-    background-color: var(--cor-branco);
+    background-color: var(--footer-text-color);
     border: none;
-    box-shadow: 0 4px 12px var(--cor-sombra);
-    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px var(--secondary-color);
+    border-radius: 8px;
 }
 
 .card-body p {
     font-size: 18px;
-    color: var(--cor-secundaria);
+    color: var(--secondary-color);
 }
 
 strong.text-danger {
-    color: var(--cor-primaria) !important;
+    color: var(--primary-color) !important;
 }
 
 footer {
-    background-color: var(--cor-primaria);
-    color: var(--cor-branco);
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
     text-align: center;
     padding: 15px 0;
     width: 100%;
     position: relative;
     left: 0;
     bottom: 0;
-}
-
-footer a {
-    color: var(--cor-branco);
-    text-decoration: none;
-    font-weight: bold;
-    transition: var(--transition);
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
