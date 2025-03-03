@@ -1,28 +1,29 @@
 :root {
-    --primary-color: #e02828;
-    --secondary-color: #333;
-    --background-color: #fafafa;
-    --menu-background-color: #555;
-    --menu-hover-color: var(--primary-color);
-    --footer-background-color: #e02828;
-    --footer-text-color: #fff;
-    --link-hover-color: #fff;
-    --font-family: 'Roboto', sans-serif;
-    --button-hover-color: #555;
+    --cor-primaria: #e02828;
+    --cor-secundaria: #333;
+    --cor-fundo: #fafafa;
+    --cor-menu-fundo: #555;
+    --cor-menu-hover: var(--cor-primaria);
+    --cor-footer-fundo: #e02828;
+    --cor-footer-texto: #fff;
+    --cor-link-hover: #fff;
+    --fonte-padrao: 'Roboto', sans-serif;
+    --cor-botao-hover: #555;
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--secondary-color);
-    font-family: var(--font-family);
+    background-color: var(--cor-fundo);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-padrao);
     margin: 0;
     padding: 0;
 }
 
 .custom-navbar {
-    background-color: var(--primary-color);
+    background-color: #ffffff; 
     padding: 10px 20px;
     width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -31,48 +32,51 @@ body {
 }
 
 .navbar a {
-    color: var(--footer-text-color);
+    color: var(--cor-secundaria);
     text-decoration: none;
 }
 
 .navbar a:hover {
-    color: var(--link-hover-color);
+    color: var(--cor-menu-hover);
 }
 
 h1 {
     font-size: 25px;
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--cor-primaria);
     margin-bottom: 20px;
 }
 
 .img-fluid {
     border-radius: 8px;
-    box-shadow: 0 4px 12px var(--secondary-color);
+    box-shadow: 0 4px 12px var(--cor-secundaria);
 }
 
 .card {
-    background-color: var(--footer-text-color);
+    background-color: var(--cor-footer-texto);
     border: none;
-    box-shadow: 0 4px 12px var(--secondary-color);
+    box-shadow: 0 4px 12px var(--cor-secundaria);
     border-radius: 8px;
 }
 
 .card-body p {
     font-size: 18px;
-    color: var(--secondary-color);
+    color: var(--cor-secundaria);
 }
 
 strong.text-danger {
-    color: var(--primary-color) !important;
+    color: var(--cor-primaria) !important;
 }
 
-footer {
-    background-color: var(--footer-background-color);
-    color: var(--footer-text-color);
+.footer {
+    background-color: var(--cor-footer-fundo);
+    color: var(--cor-footer-texto);
     text-align: center;
     padding: 15px 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     left: 0;
     bottom: 0;
