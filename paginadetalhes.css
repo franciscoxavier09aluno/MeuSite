@@ -23,10 +23,15 @@ body {
     height: 35px !important;
 }
 
+.navbar-toggler-icon {
+    color: var(--cor-primaria);
+    hover: var(--cor-hover);
+
 .navbar-nav .nav-link {
     background-color: var(--cor-primaria);
-    color: var(--cor-primaria);
+    color: var(--cor-primaria) !important;
     font-weight: bold;
+    display: flex !important;
     transition: var(--transition);
 }
 
