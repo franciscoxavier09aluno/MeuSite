@@ -16,7 +16,7 @@ body {
 }
 
 .navbar {
-    background-color: var(--cor-primaria) !important;
+    background-color: var(--cor-branco) !important;
 }
 
 .navbar-brand img {
@@ -24,6 +24,7 @@ body {
 }
 
 .navbar-nav .nav-link {
+    background-color: var(--cor-primaria);
     color: var(--cor-primaria);
     font-weight: bold;
     transition: var(--transition);
