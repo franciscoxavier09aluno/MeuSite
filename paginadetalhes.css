@@ -63,6 +63,7 @@ strong.text-danger {
     display: flex !important;
     justify-content: center;
     align-items: center;
+    position: relative !important;
     left: 0;
     bottom: 0;
 }
