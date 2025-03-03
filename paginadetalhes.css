@@ -1,14 +1,10 @@
 :root {
-    --cor-primaria: #e02828;
+    --cor-primaria: #e02828 !important;
     --cor-secundaria: #333;
     --cor-fundo: #fafafa;
-    --cor-menu-fundo: #555;
-    --cor-menu-hover: var(--cor-primaria);
     --cor-footer-fundo: #e02828;
     --cor-footer-texto: #fff;
-    --cor-link-hover: #fff;
     --fonte-padrao: 'Roboto', sans-serif;
-    --cor-botao-hover: #555;
 }
 
 body {
@@ -19,25 +15,15 @@ body {
     padding: 0;
 }
 
-.custom-navbar {
-    background-color: #ffffff; 
+.navbar {
+    background-color: #ffffff;
     padding: 10px 20px;
     width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px #ccc;
 }
 
 .logo {
     height: 35px;
-    background-color: transparent;
-}
-
-.navbar a {
-    color: var(--cor-secundaria);
-    text-decoration: none;
-}
-
-.navbar a:hover {
-    color: var(--cor-menu-hover);
 }
 
 h1 {
@@ -49,13 +35,13 @@ h1 {
 
 .img-fluid {
     border-radius: 8px;
-    box-shadow: 0 4px 12px var(--cor-secundaria);
+    box-shadow: 0 4px 12px #ccc;
 }
 
 .card {
     background-color: var(--cor-footer-texto);
     border: none;
-    box-shadow: 0 4px 12px var(--cor-secundaria);
+    box-shadow: 0 4px 12px #ccc;
     border-radius: 8px;
 }
 
@@ -74,10 +60,10 @@ strong.text-danger {
     text-align: center;
     padding: 15px 0;
     width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: fixed;
     left: 0;
     bottom: 0;
 }
